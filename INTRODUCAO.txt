@@ -1,0 +1,94 @@
+||----------------------------------------   28/12/2023=13:54   --||
+||----------------------------------------------------------------||
+
+O que é SQL?
+
+    SQL é uma linguagem padrão para acessar, armazenar, manipular e recuperar dados em banco de dados.
+
+    -
+        SQL significa "Structured Query Language" que no português do Brasil ficaria assim: "Linguagem de Consulta Estruturada".
+
+    -
+
+        SQL tornou-se um padrão do American National Standards I nstitute(ANSI) em 1986, e da Internetional Organization for Standardization(ISO) em 1987.
+
+||----------------------------------------------------------------||
+||----------------------------------------------------------------||
+
+Cite alguns Bancos de Dados que suportam a linguagem SQL.
+
+    MySQL - SQL Server - MS Access - Oracle - SyBase - Informix - Postgres e muito mais.
+
+||----------------------------------------------------------------||
+||----------------------------------------------------------------||
+
+O que a linguagem SQL pode fazer?
+
+    -
+        Executar consultas em um Banco de Dados.
+
+    -
+        Recuperar dados de um Banco de Dados.
+
+    -
+        Inserir registros em um banco de dados.
+
+    -
+        Atualizar registros em um Banco de Dados.
+
+    -
+        Excluir registros de um Banco de Dados.
+
+    -
+        Criar novos Bancos de Dados.
+
+    -
+        Criar novas tabelas em um Banco de Dados.
+
+    -
+        Criar procedimentos armazenados em um Banco de Dados.
+
+    -
+        Criar visualizações em um banco de dados.
+
+    -
+        Definir permissões em tabelas, procedimentos e visualizações.
+
+||----------------------------------------------------------------||
+||----------------------------------------------------------------||
+
+SQL é um padrão, mas...
+
+    Embora SQL seja um padrão ANSI/ISO, existem diferentes versões da linguagem SQL.
+
+    No entanto, para serem compatíveis com o padrão ANSI, todos eles suportam pelo menos os comandos principais(como SELECT, UPDATE, DELETE, INSERT, WHERE) de maneira semelhante.
+
+    NOTA:
+
+        A maioria dos programas de Banco de Dados SQL também possui suas próprias extensões proprietárias além do padrão SQL.
+
+||----------------------------------------------------------------||
+||----------------------------------------------------------------||
+
+O que é RDBMS?
+
+    RDBMS significa "Relational Database Management System" que traduzindo para o portugês do Barasil fica: "Sistema de gerenciamento de Banco de Dados Relacional".
+
+    RDBMS é a base para SQL e para todos os sistemas de Banco de Dados modernos, como: MS SQL Server, IBM DB2, Oracle, MySQL e Microsoft Access.
+
+    Os dados no RDBMS são armazenados em objetos de Banco de Dados chamados tabelas. Uma tabela é uma coleção de entradas de dados relacionados e consiste em colunas e linhas.
+
+||----------------------------------------------------------------||
+||----------------------------------------------------------------||
+
+O que é uma tabela?
+
+    Exemplo de uma tabela:
+
+        https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+
+    Cada tabela é dividida em entidades menores chamadas campos. Os campos da tabela "Clientes" no exemplo acima concistem em CustomerID, CustomerName, ContactName, Address, City, PostalCode e Country. Um campo é uma coluna de uma tabela projetada para manter informações específicas sobre cada registro da tabela.
+
+    Um registro, também chamado de linha, é cada entrada individual que existe em uma tabela. Por exemplo, existem 91 registros na tabela Clientes acima. Um registro é uma entidade horizontal em uma tabela.
+
+    Uma coluna é uma entidade vertical em uma tabela que contem todas as informações associadas a um campo específico de uma tabela.
