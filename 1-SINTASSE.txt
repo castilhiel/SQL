@@ -1,0 +1,68 @@
+Instruções SQL:
+
+    A maioria das ações que você precisa executar em um banco de dados são realizadas com instruções SQL.
+
+    As instruções SQL consistem em palavras-chave que são fáceis de entender.
+:
+
+Tabelas em um Banco de Dados:
+
+    Um Banco de Dados pode conter uma ou mais tabelas. Cada tabela é identificada atravéz de um nome("Clientes", "Pedidos", "Produtos"), e conter registros(cada linha da tabela) com informações.
+
+    Aqui está o exemplo de uma tabela em um banco de dados:
+
+        https://www.w3schools.com/sql/trysql.asp?filename=trysql_customers
+
+        Ela contem 5 linhas(uma para cada cliente) e 7 colunas(ClienteID, ClienteNome, NomeContato, Endereço, Cidade, CodigoPostal, Pais).
+
+        Linha é onde se tem todas as informações de cada registro.
+
+        Coluna é onde separamos cada informação dos registros.
+    :
+:
+
+Tenha em mente:
+
+    Instruções SQL não diferenciam Maiúsculas de Minúsculas, por exemplo:
+    
+        "select" & "SELECT" são a mesma coisa.
+
+        Recomendo usar em Maiúsculas.
+    :
+:
+
+Ponto & vírgula depois de cada instrução SQL?:
+
+    Alguns Bancos de Dados precisam do "ponto & vírgula" no final de cada instruçõa SQL.
+
+    "ponto & vírgula" é a maneira mais comum para separar instruções SQL em Bancos de dados o que permite que mais de uma instrução SQL seja executada na mesma chamada ao servidor.
+
+    Recomendo usar "ponto & vírgula" no final de ca instrução SQL.
+:
+
+Alguma das instruções SQL mais usadas:
+
+    SELECT = Extrair informações de um Banco de Dados.
+
+    UPDATE = Atualizar informações em um Banco de Dados.
+
+    DELETE = Remove informações de um Banco de Dadods.
+
+    INSERT INTO = Inserir uma nova informação em um Banco de Dados.
+
+    CREATE DATABASE = Cria um Banco de Dadods.
+
+    ALTER DATABASE = Modifica o Banco de Dados.
+
+    DROP DATABASE = Remove um Banco de Dados.
+
+    CREATE TABLE = Cria uma tabela.
+
+    ALTER TABLE = Modifica uma Tabela.
+
+    DROP TABLE = Remove uma tabela.
+
+    CREATE INDEX = Cria um índice(melhora a leitura e consulta e tem impacto negativo nas operações de escrita(inserção, atualização e exclusão))
+
+    DROP INDEX = Remove um Índice
+:
