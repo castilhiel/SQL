@@ -1,0 +1,170 @@
+A instrução SQL SELECT DISTINCT:
+
+    Essa instrução é usada para pegar informações removendo duplicatas do Banco de Dados.
+
+    Como assim "removendo duplicatas"?:
+    
+        Repare nessa coluna:
+        
+            | Nome    |
+            |---------|
+            | Gabriel |
+            | Gabriel |
+            | Gabriel |
+            | Gabriel |
+            | Daniel  |
+            | Daniel  |
+            | Daniel  |
+            | Daniel  |
+
+            SELECT DISTINCT Nome FROM Clientes;
+
+                | Nome    |
+                |---------|
+                | Gabriel |
+                | Daniel  |
+        :
+
+        Se eu quiser saber quais os nomes das pessoas cadastradas no meu Banco de Dados e digamos que tem 1 milhão de pessoas cadastradas sendo:
+        
+            250.000 - Gabriel
+
+            250.000 - Daniel
+
+            249.999 - Felipe
+
+            1       - Ana
+
+            Só temos 4 nomes diferentes, concorda comigo que não preciso pegar 1 milhão de nomes mas apenas 4.
+        :
+    :
+
+    Sintaxe:
+    
+        SELECT DISTINCT coluna1, coluna2, ... FROM nomeDaTabela;
+    :
+
+    Exemplo:
+    
+        SELECT DISTINC Pais FROM Clientes;
+
+            SELECT = Pegue
+
+            DISTINCT = Removendo duplicatas
+
+            Pais, Nome = A coluna Pais
+
+            FROM = da tabela
+
+            Clientes = Nome da tabela
+
+        =============================================
+
+        SELECT DISTINC Pais, Nome FROM Clientes;
+
+            SELECT = Pegue
+
+            DISTINCT = Removendo duplicatas
+
+            Pais, Nome = A coluna Pais e Nome
+
+            FROM = da tabela
+
+            Clientes = Nome da tabela
+
+            Aqui temos uma comportamento diferente, por exemplo:
+            
+                +---------+----------+
+                | Nome    | Pais     |
+                +---------+----------+
+                | Gabriel | Brasil   |
+                | Gabriel | Brasil   |
+                | Gabriel | Brasil   |
+                | Daniel  | Brasil   |
+                | Felipe  | Alemanha |
+                | Felipe  | Alemanha |
+                | Carlos  | Japao    |
+                | Daniel  | Japao    |
+                | Daniel  | Japao    |
+                +---------+----------+
+
+                SELECT DISTINC Pais, Nome FROM Clientes;
+
+                +---------+----------+
+                | Nome    | Pais     |
+                +---------+----------+
+                | Gabriel | Brasil   |
+                | Danile  | Brasil   |
+                | Daniel  | Japao    |
+                | Felipe  | Alemanha |
+                | Carlos  | Japao    |
+                +---------+----------+
+
+                Ele remove a duplicata onde o valor se repete em todas as colunas chamadas.
+            :
+    :
+
+    Nota:
+    
+        A instrução SQL SELECT sem DISTINCT retorna tudo incluindo duplicatas.
+    :
+
+    Exemplo da W3School:
+    
+        https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_distinct
+    :
+
+    Exercícios:
+    
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct nome, idade from clientes;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct marca, cor from carros;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct peso, altura from lutadores;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+        select distinct material, cor from copos;
+    :
+:

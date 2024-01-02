@@ -32,9 +32,9 @@ A instrução SQL SELECT:
             Clientes    = Nome da tabela
     :
 
-    Exemplo da W2School:
+    Exemplo da W3School:
     
-        https://www.w3schools.com/sql/trysql.asp?filename=trysql_customers
+        https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns
     :
 
     Exercicios:
@@ -48,99 +48,54 @@ A instrução SQL SELECT:
         (Por ser chato ficar misturando ḿaiúsculas e minúsculas vou digitar tudo em minúsculo.)
 
         select Nome from Carros;
-
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
+        select Nome from Carros;
         select Idade, Peso from Pacientes;
-
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
+        select Idade, Peso from Pacientes;
         select Poder, Mana from Personagens;
-
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
+        select Poder, Mana from Personagens;
         select Marca, Cor from Navios;
-
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
+        select Marca, Cor from Navios;
         select Nome, Crime from Prisioneiros;
-
-        select Nome, Ingredientes, Preco from Doces;
-
-        select Raca from Cachorros;
-
-        select Nome, Crime from Prisoneiros;
-
-        select Poder, Mana from Personagens;
-
-        select Nome, CPF from Acionistas;
-
-        select Nome, idade from Inscritos;
-
-        select Nome from Inscritos;
-
-        select Nome from Inscritos;
-
-        select Nome from Inscritos;
-
-        select Nome from Inscritos;
-
-        select Nome from Inscritos;
-
-        select Idade from Pessoas;
-
-        select QuantidadeDeLikes from Videos;
-
-        select DataDeNascimento from Funcionarios;
-
-        select Preco from Produtos;
-
-        select Preco from Produtos;
-
-        select Nome from Produtos;
-
-        select Nome from Frutas;
-
-        select Nome from Motos;
-
-        select Espinhos, Cheiro from Flores;
-
-        select TamanhoDoTerreno from Clientes;
-
-        select Doencas from Pacientes;
-
-        select Nome from Fugitivos;
-
-        select GeneroMusical from Musicas;
-
-        select IdadeMinima from Filmes;
-
-        select Nome from Pacientes;
-
-        select Especies from Animais;
-
-        select Mamifero from Animais
-
-        select Mamifero from Animais;
-
-        select PodeTerFilho from Pacientes;
-
-        select NotaDoCliente, Comentario, NomeDoUsuario from Jogo;
-
-        select NomeJogo from Empresa;
-
-        select NomeEmpresa from MelhoresEmpresas;
-
-        select NomeEmpresa from MelhoresEmpresas;
-
-        select QuantoEstaDevendo from Clientes;
-
-        select Idade from Pessoas;
-
-        select NomeJogador from Vasco;
-
-        select NomeTime from Times;
-
-        select ParafusoTipo from Parafusos;
-
-        select ParafusadeiraTipo from Parafusadeiras;
-
-        select GasolinaQualidade from PostosDeGasolina;
-
-        select QuantasPortas from Carros;
-
-        select DescricaoDoPedido, Endereco, FormaDePagamento from Ordens;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
+        select Nome, Crime from Prisioneiros;
     :
 :
