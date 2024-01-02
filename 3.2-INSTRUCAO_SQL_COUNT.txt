@@ -1,0 +1,178 @@
+A instrução SQL COUNT:
+
+    Essa instrução é usada para pegar a quantidade de informações que existem no Banco de Dados removendo duplicatas.
+
+    Sintaxe:
+    
+        SELECT COUNT(*) FROM nomeTabela; - Com duplicatas;
+
+        SELECT COUNT(*) FROM nomeTabela WHERE condiçao;
+
+        SELECT COUNT(DISTINCT coluna1, coluna2, ...) FROM Clientes; - Sem duplicatas
+    :
+
+    Observação:
+    
+        COUNT pode receber apenas um valor.
+    :
+
+    Exemplos:
+    
+        Como saber quantos registros existem no Banco de Dados:
+        
+            SELECT COUNT(*) FROM Clientes;
+
+                SELECT   = Pegue
+
+                COUNT(*) = A quantidade de todos os registros
+
+                FROM     = Da tabela
+
+                Clientes = nomeDaTabela
+
+            =======================================================
+
+            Nota:
+
+                A consulta abaixo é a mesma coisa que a consulta acima. Não importa que coluna eu quero ele vai trazer a quantidade de registros.
+            
+                SELECT COUNT(Nome) FROM Clientes;
+
+                    SELECT      = Pegue
+
+                    COUNT(Nome) = A quantidade de nomes
+
+                    FROM        = Da tabela
+
+                    Clientes    = nomeDaTabela
+            :
+        :
+
+        Como saber quantos nomes diferentes existem no meu Banco de Dados:
+        
+            SELECT COUNT(DISTINCT Nome) FROM Clientes;
+
+                SELECT               = Pegue
+
+                COUNT(DISTINCT Nome) = A quantidade de nomes removendo duplicatas
+
+                FROM                 = Da tabela
+
+                Clientes             = nomeDaTabela
+
+            Se a consulta não funcionar tente:
+            
+                SELECT COUNT(DISTINCT Nome) AS "QuantidadeNomesDistintos" FROM Clientes;
+
+                MS Access:
+                
+                    SELECT COUNT(*) AS "QuantidadeNomesDistintos" FROM (SELECT DISTINCT Nome from Clientes);
+                :
+            :
+        :
+
+        Como saber quantas combinações diferentes de nome e país existem no meu Banco de Dados:
+        
+            SELECT COUNT(DISTINCT Nome, Pais) FROM Clientes;
+
+                SELECT                     = Pegue
+
+                COUNT(DISTINCT Nome, Pais) = A quantidade de combinações de nome e país removendo duplicatas
+
+                FROM                       = Da tabela
+
+                Clientes                   = nomeDaTabela
+
+            Se a consulta não funcionar tente:
+            
+                SELECT COUNT(DISTINCT Nome, Pais) AS "QuantidadeCombinacaoNomePaisDistintos" FROM Clientes;
+
+                MS Access:
+                
+                    SELECT COUNT(*) AS "QuantidadeCombinacaoNomePaisDistintos" FROM (SELECT DISTINCT Nome, Pais from Clientes);
+                :
+            :
+        :
+
+        Como saber quantos produtos sem duplicata existem onde o ano da venda seja 2018 e o preço seja mais de 300 reais:
+        
+            SELECT COUNT(DISTINCT Produtos) FROM Loja WHERE AnoDeVenda = 2018 AND Preco > 300;
+
+                SELECT = Pegue
+
+                COUNT(DISTINCT Produto) = A quantidade de produtos NomesDistintos
+
+                FROM = Da tabela
+
+                Loja = Nome da tabela
+
+                WHERE = Onde
+
+                AnoDeVenda = 2018 AND Preco > 300 = Condição
+
+            Se a consulta não funcionar tente:
+            
+                SELECT COUNT(DISTINCT Produto) AS "QuantidadeProdutosDistintosQueForamVendidosEm2018ComOPrecoMaiorQue300" FROM Loja WHERE AnoDaVenda = 2018 And Preco > 300;
+
+                MS Access:
+                
+                    SELECT COUNT(*) AS "QuantidadeProdutosDistintosQueForamVendidosEm2018ComOPrecoMaiorQue300" FROM (SELECT DISTINCT Produto from Loja WHERE AnoDaVenda = 2018 AND Preco > 300);
+                :
+            :
+        :
+    :
+
+    Exercícios:
+    
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        select count(distinct pais) from clientes;
+        selecr count(distinct pais) from clientes;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(*) from carros;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct pais, cidade) from clientes;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct peso) from gatos;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+        select count(distinct nome) from clientes where idade > 18;
+    :
+:
